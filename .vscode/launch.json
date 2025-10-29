@@ -5,7 +5,14 @@
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
-      "args": [],
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}",
+        "-lm"
+      ],
       "stopAtEntry": false,
       "externalConsole": false,
       "cwd": "/home/cedric/Leetcode/C++",
