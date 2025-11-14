@@ -1,3 +1,13 @@
+/* You are given a positive integer `n`, indicating that we initially have an `nxn` 0-indexed matrix `mat` filled with zeroes. 
+ *
+ * You are also given a 2D integer array query. For eac `query[i]=[row1i, col1i, row2i, col2]`, you should do the following operation:
+ *
+ * Add `1`to every element in the submatrix with the top left corner `(row2i, col2i)`. That is, add `1` to `mat[x][y]` for all `row1i<=x<=row2i` and `col1i<=y<=col2i`
+ *
+ * Return the matrix mat after performing every query
+ * */
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -28,7 +38,7 @@ vector<vector<int>> rangeAddQueries(int n, vector<vector<int>>& queries){
 }
 
 int main(){
-	iso::sync_with_stdio(false);
+	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
 
 	int n;
